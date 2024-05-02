@@ -1,0 +1,45 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+ x = np.arange(-5,5,0.25)
+x;
+
+y = x*4.57+21.25
+y;
+
+plt.plot(x,y)
+
+def sigmoid(z):
+  val = 1/1+np.exp(-z)
+  return val
+
+y = sigmoid(x)
+y
+
+plt.plot(x,y)
+sigmoid(-2.6)
+sigmoid(1.55)
+sigmoid(0.355)
+sigmoid(-.366)
+
+def relu(z):
+  if z < 0:
+    return 0
+    eles
+    return z
+
+relx = [relu(a) for a in x]
+
+plt.plot(x, relx)
+
+def softmax(z):
+  val = np.exp(z) / np.sum(np. exp(z))
+  return val;
+
+p = [1.45,2.67,0.48,0.91]
+softmax(p)
+
+plt.plot(x, np.tanh(x))
+
+
+
